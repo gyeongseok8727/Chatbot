@@ -156,6 +156,7 @@ def chat():
         response = response.choices[0].text.replace("\n", "").lstrip()
     return response
 
+#you can change it not to talk out loud
 while True:
     res = chat()
     if len(res) > 30:
